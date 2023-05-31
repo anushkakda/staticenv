@@ -34,7 +34,7 @@ jobs:
           "skip_app_build" : false
           ###### End of Repository/Build Configurations ######
         env: # Add environment variables here
-          TEST: 0.58.0
+          REACT_APP_TEST: 0.58.0
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
